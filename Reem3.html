@@ -18,6 +18,7 @@
     </ul>
 </nav>
 
+
 <h1 class="title">اهم المعالم السياحية في السودان</h1>
 
 <div class="places">
@@ -34,6 +35,28 @@
         <p>يضم اثار من كل العصور السودانية</p>
     </div>
 </div>
+<div class="contact-section" style="max-width: 500px; margin: 30px auto; padding: 20px; direction: rtl; text-align: right;">
+    <h3>اتصل بنا</h3>
+    <form action="db.php" method="POST">
+        <div style="margin-bottom: 15px;">
+            <label style="display: block; margin-bottom: 5px; font-weight: bold;">الاسم</label>
+            <input type="text" name="name" placeholder="أدخل اسمك" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box;">
+        </div>
+
+        <div style="margin-bottom: 15px;">
+            <label style="display: block; margin-bottom: 5px; font-weight: bold;">البريد الإلكتروني</label>
+            <input type="email" name="email" placeholder="أدخل بريدك الإلكتروني" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box;">
+        </div>
+
+        <div style="margin-bottom: 15px;">
+            <label style="display: block; margin-bottom: 5px; font-weight: bold;">الرسالة</label>
+            <textarea name="comment" placeholder="اكتب رسالتك..." rows="4" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box;"></textarea>
+        </div>
+
+        <button type="submit" style="background-color: #f39c12; color: white; border: none; padding: 10px 25px; font-size: 16px; border-radius: 20px; cursor: pointer; display: block; margin-right: auto;">إرسال</button>
+    </form>
+</div>
+
 
 <script src="script.js"></script>
 <script>checkLogin()</script>
