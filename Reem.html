@@ -148,12 +148,29 @@
         </ul>
     </nav>
     <h1 class="title">اتصل بنا</h1>
-    <div style="background:white; padding:30px; border-radius:10px; width:500px; margin:0 auto;">
-        <p><b>الايميل:</b> info@sudantourism.sd</p>
-        <p><b>الهاتف:</b> +249 123 456 789</p>
-        <p><b>العنوان:</b> الخرطوم - السودان</p>
-    </div>
+    <div style="max-width: 500px; margin: 0 auto; text-align: right;">
+    <form action="db.php" method="POST">
+        <div style="margin-bottom: 15px;">
+            <label style="display: block; margin-bottom: 5px; font-weight: bold;">الاسم</label>
+            <input type="text" name="name" placeholder="أدخل اسمك" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box;">
+        </div>
+        
+        <div style="margin-bottom: 15px;">
+            <label style="display: block; margin-bottom: 5px; font-weight: bold;">البريد الإلكتروني</label>
+            <input type="email" name="email" placeholder="أدخل بريدك الإلكتروني" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box;">
+        </div>
+        
+        <div style="margin-bottom: 15px;">
+            <label style="display: block; margin-bottom: 5px; font-weight: bold;">الرسالة</label>
+            <textarea name="message" placeholder="اكتب رسالتك هنا..." rows="5" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box;"></textarea>
+        </div>
+        
+        <button type="submit" name="submit" style="width: 100%; background: #007bff; color: white; padding: 10px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer;">إرسال الرسالة</button>
+    </form>
 </div>
+
+
+
 
 <script>
     // بيانات تجريبية للدخول
